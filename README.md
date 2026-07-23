@@ -18,39 +18,51 @@ FreshRoutes is a full-stack, production-ready e-commerce grocery delivery platfo
 - **Database**: MongoDB (Mongoose ODM)
 - **Authentication**: JWT (JSON Web Tokens), bcrypt.js
 
-## 🚀 Getting Started
+## 🚀 Getting Started (Manual Steps to Run Locally)
+
+Follow these manual steps to get the project running on your own machine.
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.com/) installed on your machine.
+Make sure you have [Node.js](https://nodejs.org/) installed. You will also need [MongoDB](https://www.mongodb.com/) installed and running on your machine (or use a free MongoDB Atlas cloud cluster).
 
-### Installation
+### Step-by-Step Installation
 
 1. **Clone the repository:**
+   Open your terminal (Command Prompt, PowerShell, or Mac Terminal) and run:
    ```bash
    git clone https://github.com/astutesona/food-delivery-system.git
+   ```
+
+2. **Navigate into the project folder:**
+   ```bash
    cd food-delivery-system
    ```
 
-2. **Install server dependencies:**
+3. **Install the required packages:**
+   This project uses Express and Mongoose. Install them by running:
    ```bash
    npm install
    ```
 
-3. **Database Seeding (Optional but recommended):**
-   To populate the database with initial products, run:
+4. **Start your local MongoDB Server:**
+   Ensure your local MongoDB instance is running. If you have MongoDB Community Server installed, it usually runs automatically in the background on `mongodb://localhost:27017`.
+
+5. **Populate the Database with dummy data (Optional):**
+   To easily see products on the website without manually adding them, run the seed file once:
    ```bash
    node seed.js
    ```
 
-4. **Start the application:**
+6. **Start the Web Server:**
+   Launch the backend server by running:
    ```bash
-   npm run dev
-   # OR
    node server.js
    ```
+   *You should see a message saying the server is running on port 3000.*
 
-5. **View in Browser:**
-   Open your browser and navigate to: `http://localhost:3000`
+7. **View the Website:**
+   Open your favorite web browser (Chrome, Edge, Safari) and go to:
+   👉 **[http://localhost:3000](http://localhost:3000)**
 
 ## 🎨 Design Highlights
 
