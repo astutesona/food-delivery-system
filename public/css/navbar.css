@@ -30,7 +30,7 @@
 }
 
 .logo img {
-    height: 45px;
+    height: 80px;
     object-fit: contain;
     transition: var(--transition-smooth);
 }
@@ -55,6 +55,7 @@
     position: relative;
     padding: 8px 0;
     transition: var(--transition-fast);
+    text-decoration: none !important;
 }
 
 .nav-links a::after {
